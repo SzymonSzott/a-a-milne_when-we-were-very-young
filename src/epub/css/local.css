@@ -29,3 +29,86 @@ section[epub|type~="dedication"] > *{
 	}
 }
 /* End centered dedications */
+
+/* Poetry */
+article,
+section{
+	break-after: page;
+}
+
+[epub|type~="z3998:poem"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p + p{
+	margin-top: 1em;
+}
+
+[epub|type~="z3998:poem"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br{
+	display: none;
+}
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i2{
+	padding-left: 3em;
+	text-indent: -1em;
+}
+
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
+p span.i4{
+	padding-left: 5em;
+	text-indent: -1em;
+}
+
+p span.i5{
+	padding-left: 6em;
+	text-indent: -1em;
+}
+
+p span.i6{
+	padding-left: 7em;
+	text-indent: -1em;
+}
+
+p span.i7{
+	padding-left: 8em;
+	text-indent: -1em;
+}
+
+p span.i8{
+	padding-left: 9em;
+	text-indent: -1em;
+}
+
+p span.i12{
+	padding-left: 13em;
+	text-indent: -1em;
+}
+
+p span.i13{
+	padding-left: 14em;
+	text-indent: -1em;
+}
+/* End poetry */
+
+/* Footers */
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+/* End footers */
