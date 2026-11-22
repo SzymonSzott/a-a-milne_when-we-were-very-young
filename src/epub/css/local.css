@@ -104,6 +104,10 @@ p span.i13{
 	padding-left: 14em;
 	text-indent: -1em;
 }
+
+span > span + span{
+	margin-left: 1.5em;
+}
 /* End poetry */
 
 /* Footers */
