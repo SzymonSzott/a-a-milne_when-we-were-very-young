@@ -31,8 +31,7 @@ section[epub|type~="dedication"] > *{
 /* End centered dedications */
 
 /* Poetry */
-article,
-section{
+article{
 	break-after: page;
 }
 
@@ -116,3 +115,21 @@ footer{
 	text-align: right;
 }
 /* End footers */
+
+/* Stanza header */
+[epub|type~="z3998:poem"] header{
+	margin: 2em 1em 1em;
+}
+
+[epub|type~="z3998:poem"] header p{
+	text-align: center;
+}
+
+[epub|type~="z3998:poem"] header + p{
+	margin: 0;
+}
+/* End stanza header */
+
+[epub|type~="z3998:poem"] section + p{
+        margin-top: 1em;
+}
